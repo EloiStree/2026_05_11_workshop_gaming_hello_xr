@@ -630,3 +630,174 @@ https://www.youtube.com/@LearnByPlayingInXR/videos
 
 ![alt text](image-131.png)
 https://www.youtube.com/@LearnByPlayingInXR/shorts
+
+
+
+
+---------------
+
+
+
+# Eloi Stree
+
+
+Ca donnerai quoi de voir avec les odeurs
+![alt text](image-132.png)
+https://www.youtube.com/watch?v=1pqCA1mT_-E
+
+3h pour faire un jeu ?
+![alt text](image-133.png)
+https://www.youtube.com/watch?v=YbL5CYoa91A&pp=0gcJCSgLAYcqIYzv
+
+
+Entre la performence de votre casque
+![alt text](image-134.png)
+https://www.youtube.com/watch?v=lmMwo4egIPU
+
+
+
+Scan pour la VR
+![alt text](image-136.png)
+https://www.youtube.com/watch?v=csfDo5HBN0U
+
+Dun mesh a du Voxel en Unity ?
+![alt text](image-135.png)
+https://www.youtube.com/watch?v=arIoK70azyo
+
+
+![alt text](image-137.png)
+https://www.youtube.com/watch?v=NmToclELF8k
+https://www.youtube.com/watch?v=tb78xYbgx6s
+
+
+Fuck NDA, Je peux pas parler de ce jeu.
+![alt text](image-138.png)
+https://www.youtube.com/watch?v=3JSLL873Nz8
+
+
+Jeux a travers des Webcams ?
+![alt text](image-139.png)
+https://www.youtube.com/watch?v=1j5-ZSKc6w4
+
+
+
+Stereo view to video ?
+![alt text](image-140.png)
+
+https://www.youtube.com/watch?v=Uk7NJDqp5G8
+
+
+360 App to visite event
+![alt text](image-141.png)
+https://www.youtube.com/watch?v=Bt-0Uup92ko
+
+
+One Mesh concept for Pool in Unity
+![alt text](image-142.png)
+https://www.youtube.com/watch?v=f21l7T1aFu0&pp=0gcJCSgLAYcqIYzv
+
+
+
+Track a bug with vuforia
+![alt text](image-143.png)
+
+https://www.youtube.com/watch?v=-9FdMYp-B7s
+
+
+AR et VR avec Vuforia
+![alt text](image-144.png)
+https://www.youtube.com/watch?v=VqgqSFApH-Q
+
+
+360 Video pour un jeu sur cardboard
+![alt text](image-145.png)
+https://www.youtube.com/watch?v=8RHyhq3Bu1M
+
+
+Brutal Wheel Char
+![alt text](image-146.png)
+https://www.youtube.com/watch?v=uePqTm80t2Y
+
+
+Jeux pour briser le mur entre celui qui joue et ceux qui regard
+![alt text](image-147.png)
+
+https://www.youtube.com/watch?v=yOjJ4AjDKMM
+
+
+Un jeu chill que j ai creer entre la kinect et le gear vr
+![alt text](image-148.png)
+
+https://www.youtube.com/watch?v=U_H4T1sMYL4
+
+
+Gerbatron 2000 mais fun
+Jam de 3 semaines
+![D](image-149.png)
+
+https://www.youtube.com/watch?v=kwSWCrkFUd4
+
+
+Un telephone comme controller ?
+![alt text](image-150.png)
+https://www.youtube.com/watch?v=oVppA1LyYdw
+
+
+Un jeu des 7 erreurs pour chaise roulante
+![alt text](image-151.png)
+https://www.youtube.com/watch?v=9sq2fovSy6c
+
+Simuler une chaise roulante en VR
+![alt text](image-153.png)
+https://www.youtube.com/watch?v=L-Ff_epavlM&pp=0gcJCSgLAYcqIYzv
+
+Pooling
+![alt text](image-152.png)
+https://www.youtube.com/watch?v=BPbTssjNvzs
+
+
+Un jeu en VR sur DK1 avec java ?
+![alt text](image-154.png)
+https://www.youtube.com/watch?v=e4eUUVXhwYM
+
+
+Des rotations partout
+![alt text](image-155.png)
+https://www.youtube.com/watch?v=7uiYzV23XPs
+
+
+Du ralentit pour les clubs de sport ?
+![alt text](image-156.png)
+
+https://www.youtube.com/watch?v=r84nEwzDgx4
+
+
+
+Viste 360 facile ;)
+![alt text](image-157.png)
+https://www.youtube.com/watch?v=q3hdAgb6exs
+https://www.youtube.com/watch?v=q3hdAgb6exs
+https://www.youtube.com/watch?v=YRhCRERks_g
+https://www.youtube.com/watch?v=HjOcdjjVrwQ
+
+
+
+Ton project c est de la merde ;)
+![alt text](image-158.png)
+
+https://www.youtube.com/watch?v=Zp4iBEnoDro
+
+
+My internship Wolfenstein en VR avec la Kinect et le Oculus DK1
+![alt text](image-159.png)
+https://www.youtube.com/watch?v=zem8pyuyNas
+
+Kiss your puppet
+![alt text](image-160.png)
+https://www.youtube.com/watch?v=nvMY04GPniE
+
+
+
+# Eloi Teaching
+
+
