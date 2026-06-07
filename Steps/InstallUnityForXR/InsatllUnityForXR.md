@@ -609,3 +609,31 @@ https://developers.meta.com/horizon/downloads/package/oculus-developer-hub-win/
 
 ![alt text](image-113.png)
 
+
+Bon pas de chance Meta Hub fonctionne pas sur mon vieux PC.
+Mais comme moi ce que  jai besoin c est de vous monter les Meta Link.
+Je passerai par ADB
+
+-------------------
+
+Lancons Oculus Link par cable
+![alt text](image-114.png)
+
+Si vous etes dans une salle blanche c est que vous avez reussi a le fair etourner
+
+![alt text](image-115.png)
+
+Allons and Unity et poussons sur play.
+
+![alt text](image-116.png)
+
+Ta dam.
+Vous voula avec une scene Unity via LinK Quest ;)
+
+---------
+
+Explorons les Input en VR
+
+Attrapons un objet
+
+Puis apprenons ar relocaliser une scene avec deux points.
