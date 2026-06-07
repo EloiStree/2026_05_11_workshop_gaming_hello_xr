@@ -464,3 +464,148 @@ Donc allons voir comment on fait pour jouer a la VR sur votre PC.
 
 # Oculus Setup
 
+
+Allons chercher le software de Meta pour installer sur votre ordinateur Oculus Link
+[![alt text](image-85.png)](https://www.meta.com/be/en/quest/setup/)  
+https://www.meta.com/be/en/quest/setup/
+  
+
+![alt text](image-86.png)
+
+Note that it is the good time to update your graphic card driver
+![alt text](image-87.png)
+![alt text](image-92.png)
+
+
+Accepter de vendre votre ame
+![alt text](image-88.png)
+
+Choisir le dossier d install
+![alt text](image-89.png)
+
+Attendre
+![alt text](image-90.png)
+
+More waiting
+![alt text](image-91.png)
+
+
+Si vous voulez vous puvez commancer a installer Steam VR et ALVR pendant ce temps.
+https://github.com/alvr-org/ALVR
+https://store.steampowered.com/app/250820/SteamVR/
+
+
+
+Ok Creer un compte si c est pas deja le cas.
+Et connect on nous.
+
+BOn, j ai oublier mon nom de compte et mot de passe donc j ai creer un attendant
+![alt text](image-94.png)
+![alt text](image-93.png)
+
+
+Setup nous propose de configurer notre casque
+![alt text](image-95.png)
+
+Par cable
+![alt text](image-96.png)
+
+![alt text](image-97.png)
+
+Bon... On ferra avec
+![alt text](image-98.png)
+
+Allons dans la partie setting developer secion si vous etes devleoppeur
+![alt text](image-99.png)
+
+
+Accepter tout les options
+![alt text](image-100.png)
+
+Et acceptons les sources inconnues.
+(Applicaton non valider par un magasin)
+![alt text](image-101.png)
+
+
+Si vous avez utiliser Steam VR.
+Pour repasser en Quest Link
+clicker ici sur Open XR Runtime
+![alt text](image-102.png)
+
+
+Ok on est bon niveau du setup.
+
+Mais comme je dois vous monter des interfaces du casques...
+Il me faut un outil pour voir l ecran du casauqe...
+
+Il y a SCRCPY 
+https://github.com/Genymobile/scrcpy/releases/tag/v4.0
+Que vous pouvez deja telecharget et installer sur votre odinateur
+
+![alt text](image-103.png)
+
+Je le dezzip generalement dans un fichier que j appelle exe a la racine
+![alt text](image-104.png)
+
+Sa vous permettra de faire des operatoins sur votre casques et d avoir al dernier version de ADB Android Debug Bridge pour monitorer votre casque voir gerer une flotte si vous avez un peu coder en python.
+( Voir  https://github.com/EloiStree/2025_01_12_pyhton_build_run_apk_broadcaster.git )
+
+
+Cela fait 2 ans que meta nous a casser notre SCRCPY.
+Mais apparement le mois dernier cela a ete fixer ;)
+![alt text](image-105.png)
+https://github.com/Genymobile/scrcpy/issues/5913#issuecomment-3677889916   
+https://github.com/Genymobile/scrcpy/releases/tag/v4.0   
+
+
+Verifier que le casque est brancher et que il est authorizer
+Qu il n y a que un android brancher sur le pc
+Puis cliquer ici
+![alt text](image-108.png)
+![alt text](image-107.png)
+![alt text](image-106.png)
+
+Bon la resolution et le frame rate cree de la latence...
+
+Aller a coter de scrcpy.exe et dans le terminal clonons ce project.
+```
+git clone https://github.com/EloiStree/2025_01_12_pyhton_build_run_apk_broadcaster.git toolbox
+```
+
+
+Cela nous donera de quoi regarder en plus base resolution notre lentille de gauche
+![alt text](image-109.png)
+
+Bon apres factory reset la resolution du Quest 3S est pas le meme que la fois passer.
+```
+scrcpy.exe --video-source=display --audio-source=output --no-audio --orientation=0 --max-size 512 
+```
+INFO: Texture: 5934x4320
+
+Si on veut voir la camera d ailleur
+```
+scrcpy --list-cameras   
+scrcpy --list-camera-sizes    
+```
+![alt text](image-110.png)
+![alt text](image-111.png)  
+
+
+En gros SCRCPY quand  cest pas casser par Meta.
+C est trop genial😘
+
+
+-----
+
+Bon screen copy cest bien pour les nerds.
+
+Mais il y a plus simple a installer sur vos machine
+
+C est Meta Developer Hub
+
+[![alt text](image-112.png)](https://developers.meta.com/horizon/downloads/package/oculus-developer-hub-win/
+)
+https://developers.meta.com/horizon/downloads/package/oculus-developer-hub-win/
+
+![alt text](image-113.png)
+
