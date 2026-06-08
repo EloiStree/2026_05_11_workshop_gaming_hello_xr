@@ -10,12 +10,7 @@
   * Avec deux points et une feuille A4
 * Parlons **Steam Frame**
 
-Dans **ces deux jours** de cours, nous allons apprendre à configurer un **projet Meta**
-et le calibrer dans la classe avec une **bonne grosse rotation**.
-
-Si vous voulez explorer **l’utilisation** des caméras, vous pouvez jeter un œil ici :
-* [https://github.com/EloiStree/2026_02_09_WorkshopWhatNewInXR](https://github.com/EloiStree/2026_02_09_WorkshopWhatNewInXR)
-
+Dans **ces deux jours** de cours, nous allons apprendre à configurer un **projet Meta**.
 
 ----------
 
