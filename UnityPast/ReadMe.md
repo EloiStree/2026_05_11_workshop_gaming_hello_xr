@@ -1,4 +1,3 @@
-Corriger l'orthographe, garde les images et les liens. C'est du Markdown et les images sont locales.
 
 Listons les outils ou vidéos que j'ai faits autour d'Unity et de la XR que vous pourriez utiliser si vous avez le temps.
 
