@@ -30,7 +30,6 @@ MRTK https://www.youtube.com/watch?v=LKohEluBk4k&t=26s
 XRTK https://www.youtube.com/watch?v=eDicfcAgJB4&t=401s      
 
 [<img width="1330" height="408" alt="image" src="https://github.com/user-attachments/assets/2a3cb1fb-895b-40bc-b188-790e45a131ae" />](https://www.youtube.com/watch?v=Hm55CR_Ubjc&t=192s)   
-https://www.youtube.com/watch?v=Hm55CR_Ubjc&t=192s   
 VRKT https://www.youtube.com/watch?v=Hm55CR_Ubjc&t=192s  
 
 
