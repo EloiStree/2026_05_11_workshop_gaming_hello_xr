@@ -5,23 +5,23 @@
   
 Cette année, je ne vais pas chercher à faire quelque chose de trop compliqué.      
 Nous avons deux jours pour apprendre à configurer un projet Unity en XR, puis réaliser un exercice de remplacement de scène.     
-Si nous avançons rapidement, nous pourrons également pratiquer le travail en groupe avec Git et faire un peu de level design à l’aide d’Open Brush.      
+Si nous avançons rapidement, nous pourrons également pratiquer le travail en groupe avec Git et faire un peu de level design à l’aide d’Open Brush.        
 
-Pour être transparent, l’écosystème VR et ses bibliothèques évoluent tous les 6 à 12 mois.     
-Cela fait maintenant deux ans que je n’ai plus utilisé la bibliothèque Meta dans un contexte client.     
+Pour être transparent, l’écosystème VR et ses bibliothèques évoluent tous les 6 à 12 mois.       
+Cela fait maintenant deux ans que je n’ai plus utilisé la bibliothèque Meta dans un contexte client.       
 
-Je peux bien sûr vous accompagner sur les concepts VR et la configuration d’Unity,   
-mais je vous encourage également à consulter la documentation officielle afin d’apprendre à utiliser les différents blocs et outils proposés par Meta.    
+Je peux bien sûr vous accompagner sur les concepts VR et la configuration d’Unity,     
+mais je vous encourage également à consulter la documentation officielle afin d’apprendre à utiliser les différents blocs et outils proposés par Meta.      
 
-Une méthode simple consiste à rechercher sur YouTube les tutoriels les plus récents. Par exemple :
-[https://www.youtube.com/results?search_query=meta+block+2026+juin+unity+6.3](https://www.youtube.com/results?search_query=meta+block+2026+juin+unity+6.3)
-Il y a presque toujours un créateur de contenu qui a pris le temps d’expliquer les nouveautés et leur fonctionnement.
+Une méthode simple consiste à rechercher sur YouTube les tutoriels les plus récents.        
+Par exemple : [https://www.youtube.com/results?search_query=meta+block+2026+juin+unity+6.3](https://www.youtube.com/results?search_query=meta+block+2026+juin+unity+6.3)   
+Il y a presque toujours un créateur de contenu qui a pris le temps d’expliquer les nouveautés et leur fonctionnement.    
 
 [<img width="720" alt="image" src="https://github.com/user-attachments/assets/a3b0eca6-80cc-47eb-8043-59e70a9971b7" />](https://www.linkedin.com/in/eloistree/recent-activity/all/)   
-https://www.linkedin.com/in/eloistree/recent-activity/all/     
+https://www.linkedin.com/in/eloistree/recent-activity/all/       
 
-N’hésitez pas à profiter de mon expérience en posant un maximum de questions.   
-J’ai passé de nombreuses années à expérimenter dans toutes les directions :   
+N’hésitez pas à profiter de mon expérience en posant un maximum de questions.      
+J’ai passé de nombreuses années à expérimenter dans toutes les directions :      
 [https://github.com/EloiStree/2026_05_11_workshop_gaming_hello_xr/blob/main/UnityPast/ReadMe.md](https://github.com/EloiStree/2026_05_11_workshop_gaming_hello_xr/blob/main/UnityPast/ReadMe.md)
 
 
