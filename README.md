@@ -91,3 +91,14 @@ https://www.youtube.com/watch?v=zZlP7Pb4cgg
 - https://www.youtube.com/watch?v=aPmOsmXPwO8  
 
 
+-------------
+
+# Rotation
+
+- https://github.com/EloiStree/2026_05_11_workshop_hello_godot_xr/tree/main/rotation
+- https://github.com/EloiStree/2026_05_11_workshop_hello_godot_xr/tree/main/week_2/day_20/special
+- Relocation https://github.com/EloiStree/2024_10_19_upm_relocation_rotation
+
+
+
+
