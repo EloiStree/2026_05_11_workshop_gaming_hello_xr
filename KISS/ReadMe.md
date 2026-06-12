@@ -323,5 +323,6 @@ Si vous êtes masochiste :
 # Room Mesh
 
 On peut ajouter à votre scène VR le maillage (*mesh*) scanné par l’utilisateur à l’aide du bloc Meta.
-
-
+[<img width="541" height="353" alt="image" src="https://github.com/user-attachments/assets/5b5fa780-6279-4cf1-ae75-24d534680837" />](https://github.com/EloiStree/2026_05_11_workshop_gaming_hello_xr/blob/main/3D/DevRoom.obj)  
+[Download 3D](https://github.com/EloiStree/2026_05_11_workshop_gaming_hello_xr/blob/main/3D/DevRoom.obj)  
+  
