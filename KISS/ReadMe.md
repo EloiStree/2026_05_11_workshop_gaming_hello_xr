@@ -1,6 +1,6 @@
 
 # KISS
-
+d
 En espérant que cette version de l'exercice soit plus réalisable en une matinée.
 
 **Solution :**   
@@ -477,6 +477,105 @@ func relocate_node_from_start_end_points(start:Vector3,end:Vector3):
 Et voilà, nous avons un outil permettant de repositionner un niveau avec Godot.   
 Le code Godot est fonctionnel.    
 Il reste à configurer le projet, mais l'idée est là.   
+
+
+---------------
+
+
+
+# Déplacer, c'est bien, mais créer, c'est encore mieux
+
+Créons une ressource permettant d'associer une scène à une distance donnée, ainsi qu'à une marge de tolérance.
+
+```gdscript
+## Resource permettant de stocker une scène à instancier,
+## la distance attendue et son seuil de tolérance.
+class_name SELoadSceneDistanceThresholdResource
+extends Resource
+
+@export var _scene_to_create: PackedScene
+@export var _distance_expected: float = 0.0
+@export var _threshold: float = 0.02
+
+
+func get_threshold_in_meter() -> float:
+	return _threshold
+
+func get_distance_expected_in_meter() -> float:
+	return _distance_expected
+
+func get_scene_to_create() -> PackedScene:
+	return _scene_to_create
+
+func is_distance_in_range(distance: float):
+	return abs(distance - _distance_expected) < _threshold
+
+func create_scene_at_global_position_with_angle(
+	global_position: Vector3,
+	angle_y_rotation: float,
+	parent_node: Node3D
+) -> Node3D:
+	if _scene_to_create == null:
+		return null
+
+	var instance := _scene_to_create.instantiate() as Node3D
+	if instance == null:
+		return null
+	
+	parent_node.add_child(instance)
+	
+	instance.global_position = global_position
+	instance.global_rotation_degrees = Vector3(0, angle_y_rotation, 0)
+	return instance
+```
+
+Afin de faciliter le changement de configuration par les designers, regroupons ces ressources dans une seule ressource de collection.
+
+```gdscript
+class_name SELoadGroupofSceneDistanceThresholdResource
+extends Resource
+
+@export var _scenes_group: Array[SELoadSceneDistanceThresholdResource]
+```
+
+Nous allons maintenant réutiliser une variante du code précédemment utilisé pour le déplacement afin de créer automatiquement une scène en fonction de la distance entre un point de départ et un point d'arrivée.
+
+```gdscript
+class_name SELoadCreateSceneFromStartEndDistance
+extends Node3D
+
+@export var _scenes_to_create: SELoadGroupofSceneDistanceThresholdResource
+
+func create_scene_from_start_end_points(start: Vector3, end: Vector3):
+	if _scenes_to_create == null:
+		return
+
+	var direction: Vector3 = Vector3(end.x, 0, end.z) - Vector3(start.x, 0, start.z)
+	var direction_flat: Vector3 = Vector3(direction.x, 0, direction.z)
+
+	var angle: float = Vector3(1, 0, 0).signed_angle_to(
+		direction_flat,
+		Vector3.UP
+	)
+
+	var distance_segment: float = direction.length()
+
+	print("Angle: ", angle, " Distance: ", distance_segment)
+
+	for scene in _scenes_to_create._scenes_group:
+		if scene and scene.is_distance_in_range(distance_segment):
+			scene.create_scene_at_global_position_with_angle(
+				start,
+				rad_to_deg(angle),
+				get_tree().current_scene
+			)
+```
+
+Ce composant parcourt toutes les ressources configurées, vérifie si la distance calculée correspond à l'une des distances attendues, puis instancie automatiquement la scène associée avec la bonne position et orientation.
+
+
+
+
    
 
   
