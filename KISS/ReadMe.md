@@ -325,4 +325,158 @@ Si vous êtes masochiste :
 On peut ajouter à votre scène VR le maillage (*mesh*) scanné par l’utilisateur à l’aide du bloc Meta.
 [<img width="541" height="353" alt="image" src="https://github.com/user-attachments/assets/5b5fa780-6279-4cf1-ae75-24d534680837" />](https://github.com/EloiStree/2026_05_11_workshop_gaming_hello_xr/blob/main/3D/DevRoom.obj)  
 [Download 3D](https://github.com/EloiStree/2026_05_11_workshop_gaming_hello_xr/blob/main/3D/DevRoom.obj)  
+
+
+
+
+
+
+
+
+
+
+
+
+--------------
+# Version Godot
+
+Faire suivre le bas de la manette par le curseur de placement.
+```gdscript
+class_name SELoadFollowNode3D
+extends Node3D
+
+@export var what_to_follow:Node3D
+@export var what_to_move:Node3D
+
+func _process(delta: float) -> void:
+	if what_to_follow and what_to_move:
+		what_to_move.global_position = what_to_follow.global_position
+		what_to_move.global_rotation = what_to_follow.global_rotation
+```
+
+Écoutons les entrées de la manette.
+```gdscript
+class_name SELoadXrButtonInputChanged
+extends Node
+
+signal on_button_state_changed(is_on:bool)
+signal on_button_down()
+signal on_button_up()
+
+@export var controller_to_observe: XRController3D
+@export var button_name_press_release:String = "primary_click"
+
+@export var button_state:bool = 0
+
+func _ready() -> void:
+	if controller_to_observe:
+		controller_to_observe.button_pressed.connect(_pressed)
+		controller_to_observe.button_released.connect(_released)
+
+func _pressed(name:String):
+	#print("Pressed XR:", name)
+	if button_name_press_release == name:
+		#print("Pressed XR FOUND:", name)
+		on_button_down.emit()
+		if not button_state:
+			on_button_state_changed.emit(true)
+
+func _released(name:String):
+	#print("Released XR:", name)
+	if button_name_press_release == name:
+		#print("Released XR FOUND:", name)
+		on_button_up.emit()
+		if button_state:
+			on_button_state_changed.emit(false)
+```
+
+On replace les points de départ (*start*) et d'arrivée (*end*) à partir du curseur.
+```gdscript
+class_name SELoadSetAndEmitStartEndPoints
+extends Node3D
+
+signal on_start_end_points_emitted(start_point:Vector3,end_point:Vector3)
+
+@export var start_anchor:Node3D
+@export var end_anchor:Node3D
+@export var cursor_anchor:Node3D
+
+func emit_current_points_in_signal():
+	var start := start_anchor.global_position
+	var end := end_anchor.global_position
+	on_start_end_points_emitted.emit(start,end)
+
+func emit_zero_origine_points_in_signal():
+	var start := Vector3.ZERO
+	var end := Vector3.RIGHT * 0.21
+	on_start_end_points_emitted.emit(start,end)
+
+func set_start_anchor_with_cursor():
+	start_anchor.position = cursor_anchor.position
+
+func set_end_anchor_with_cursor():
+	end_anchor.position = cursor_anchor.position
+
+func set_cursor_global_position(global_position:Vector3):
+	cursor_anchor.position = global_position
+
+func set_random_positions_around_1_meter():
+	start_anchor.global_position = Vector3(randf(),randf(),randf())
+	end_anchor.global_position = Vector3(randf(),randf(),randf())
+	cursor_anchor.global_position = (end_anchor.position - start_anchor.position) / 2.0
+```
+
+Rappelons que le projet utilise OpenXR.
+```gdscript
+class_name SELoadSetupXR
+extends Node
+
+var xr_interface: XRInterface
+
+func _ready():
+	xr_interface = XRServer.find_interface("OpenXR")
+	if xr_interface and xr_interface.is_initialized():
+		print("OpenXR initialized successfully")
+
+		# Turn off v-sync!
+		DisplayServer.window_set_vsync_mode(DisplayServer.VSYNC_DISABLED)
+
+		# Change our main viewport to output to the HMD
+		get_viewport().use_xr = true
+	else:
+		print("OpenXR not initialized, please check if your headset is connected")
+```
+
+On utilise les deux vecteurs 3D générés par les scripts précédents.
+```gdscript
+class_name SELoadRelocateNodeToStartEnd
+extends Node3D
+
+@export var what_to_relocate:Node3D
+
+func relocate_node_from_start_end_points(start:Vector3,end:Vector3):
+	if what_to_relocate == null:
+		return
+
+	what_to_relocate.global_position = Vector3.ZERO
+	what_to_relocate.global_rotation = Vector3.ZERO
+
+	start.z *= -1.0
+	end.z *= -1.0
+
+	var direction :Vector3 = end - start
+	var direction_flat:Vector3 = Vector3(direction.x, 0, direction.z)
+	var angle :float = Vector3(1,0,0).signed_angle_to(direction_flat, Vector3.UP)
+
+	what_to_relocate.rotate_y(-angle)
+
+	start.z *= -1
+	what_to_relocate.global_position = start
+```
+
+Et voilà, nous avons un outil permettant de repositionner un niveau avec Godot.   
+Le code Godot est fonctionnel.    
+Il reste à configurer le projet, mais l'idée est là.   
+   
+
   
